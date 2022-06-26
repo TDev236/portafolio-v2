@@ -1,11 +1,12 @@
+import Link from 'next/link'
 import FormContact from '../components/Contact/FormContact'
-import Header from '../components/Contact/Header'
+import HeaderContact from '../components/Contact/HeaderContact'
 import MiddleContact from '../components/Contact/MiddleContact'
 
 const Contact = () => {
   return (
-    <div className='relative'>
-      <Header/>
+    <div>
+      <HeaderContact/>
       <MiddleContact/>
       <FormContact/>
     </div>

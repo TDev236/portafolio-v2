@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const FooterTopBox = () => {
@@ -6,7 +7,10 @@ const FooterTopBox = () => {
       <div className='p-3 mb-6'>
         <p className='pt-4 text-white text-4xl font-bold'>Start a project</p>
         <p className='font-thin pt-4 text-white'>Insterested in working with toether? We can have a videocall an meet.</p>
-        <button className='border-4 mt-4 text-white p-4 border-[#F8378C] font-bold rounded-full'>{`Let's do tis`}</button>
+        <Link href="/contact">
+          <p className='border-4 mt-4 text-white p-4 border-[#F8378C] font-bold rounded-full'>{`Let's do tis`}</p>
+        </Link>
+        
       </div>
     </div>
   )
