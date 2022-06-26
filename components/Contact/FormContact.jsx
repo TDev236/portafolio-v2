@@ -33,7 +33,7 @@ const FormContact = () => {
         </div>
         <div className='mt-4'>
           <p className='formTitle'>Message</p>
-          <textarea name="message"  className='resize-none shadow-xl border-2 rounded-xl mt-2 p-4 outline-none' name="" id="" cols="30" rows="8"></textarea>
+          <textarea name="message"  className='resize-none shadow-xl border-2 rounded-xl mt-2 p-4 outline-none'  id="" cols="30" rows="8"></textarea>
         </div> 
         <div className='flex justify-end my-4'> 
           <input type='submit' value="Send"  className='border-2 border-[#00005f] p-2 rounded-xl bg-[#00005f] text-white' placeholder='Submit'/>
