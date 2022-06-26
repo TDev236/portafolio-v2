@@ -1,16 +1,32 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+@layer components{
+    .buttonHeader{
+        @apply p-2 rounded-xl shadow-md text-[#00005f] font-bold text-lg cursor-pointer hover:transition-transform hover:ease-in hover:bg-[#F8378C] hover:text-white  duration-150
+    }
+    .titleBox{
+        @apply text-2xl font-bold p-6 text-[#00005f]
+    }
+    .subTextBox{
+        @apply font-light text-center text-lg mb-12 
+    }
+    .aptitudesBox{
+        @apply text-center  space-y-2 mb-8
+    }
+    .recentWorkTitle{
+        @apply font-bold text-center text-3xl py-14 text-[#00005f]
+    }
+    .iconFooter {
+        @apply font-bold text-4xl border-2 p-2 text-[#F8378C] rounded-full bg-white hover:bg-[#00002f] hover:text-white cursor-pointer
+    }
+    .formTitle{
+        @apply text-gray-400 text-xl
+    }
+    .formInput{
+        @apply p-2 border-2 w-full rounded-xl my-2 outline-none shadow-xl
+    }
 }
