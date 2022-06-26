@@ -8,7 +8,7 @@ const MiddleContact = () => {
     <div>
         <div className='flex justify-center -mt-10'>
             <img
-              className='h-40 absolute '
+              className='h-40 absolute top-[5%] left-[32%] sm:left-[36%] md:left-[40%] lg:left-[44%]'
               src="https://firebasestorage.googleapis.com/v0/b/portafolio-tiffo.appspot.com/o/contact.PNG?alt=media&token=98fcd365-1df7-45af-beb0-dcfb57a4a902"          
             />
             <img 
