@@ -4,7 +4,7 @@ import FooterMain from './FooterMain'
 
 const Footer = () => {
   return (
-    <div className='relative'>
+    <div className='bg-[#F8378C]'>
         <FooterTopBox/>
         <FooterMain/>
     </div>

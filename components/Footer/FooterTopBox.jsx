@@ -3,12 +3,12 @@ import React from 'react'
 
 const FooterTopBox = () => {
   return (
-    <div className='absolute  w-[80%] pt-10 rounded-xl bottom-[70%] md:bottom-[70%] text-center space-y-4 bg-[#00002f] left-[10%] z-10'>
-      <div className='p-3 mb-6'>
-        <p className='pt-4 text-white text-4xl font-bold'>Start a project</p>
-        <p className='font-thin pt-4 text-white'>Insterested in working with toether? We can have a videocall an meet.</p>
+    <div className='containerContacto'>
+      <div className='bg-[#00003f] items-center cajaFlexHabilidades space-y-4'>
+        <p className='text-gray-200 text-2xl text-center font-semibold'>Start a Project</p>
+        <p className='text-gray-400 font-light text-center'>Interested in working with me? Contact me and we meet.</p>
         <Link href="/contact">
-          <p className='border-4 mt-4 text-white p-4 border-[#F8378C] font-bold rounded-full'>{`Let's do tis`}</p>
+          <p className='text-center border-2 p-2 text-white bg-[#F8378C] cursor-pointer rounded-md max-w-[50%] mx-auto'>Say Hello</p>
         </Link>
         
       </div>

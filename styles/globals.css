@@ -12,7 +12,7 @@
         @apply text-2xl font-bold p-6 text-[#00005f]
     }
     .subTextBox{
-        @apply font-light text-center text-lg mb-12 
+        @apply font-semibold text-lg pb-6
     }
     .aptitudesBox{
         @apply text-center  space-y-2 mb-8
@@ -28,5 +28,20 @@
     }
     .formInput{
         @apply p-2 border-2 w-full rounded-xl my-2 outline-none shadow-xl
+    }
+    .containerHabilidades{
+        @apply w-[80%] md:w-[70%] mx-auto rounded-xl p-4
+    }
+    .cajaFlexHabilidades{
+        @apply bg-gray-100 md:flex border-2 rounded-xl p-4 border-gray-800 -mt-16
+    }
+    .cardHabilidades{
+        @apply md:w-[50%] border-b-2 md:border-b-0   border-gray-300 text-center
+    }
+    .styleIcon{
+        @apply  mt-10 text-5xl text-[#F8378C] mx-auto
+    }
+    .containerContacto{
+        @apply w-[80%] md:w-[40%] mx-auto rounded-xl p-4
     }
 }

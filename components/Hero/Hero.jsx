@@ -1,39 +1,36 @@
 import React from 'react'
-import Me from '../../public/me.png'
 import Image from 'next/image'
 import HeroSvg from '../../public/hero.svg'
-import BgMe from '../../public/mebg.png'
+import BgMe from '../../public/heroimg.png'
 
 const Hero = () => {
   return (
-    <div className='flex flex-col  justify-center items-center'>
-        <div className='mt-10 pt-10'>
-            <p className='pl-8 font-bold text-3xl mb-6 md:text-5xl text-[#00005f]'>Designer & Front-end Developer</p>
-            <p className='text-sm text-center text-gray-500 md:text-lg'>I design and code amazing simple things, and i love it.</p>
-        </div>
-        <div className='relative'>
+    <div className='w-full'>
+
+        <div className=' md:grid grid-cols-2 relative'>
+          
+          <div className='pt-10 mt-5 flex flex-col justify-center pl-4 md:pl-8'>
+            <p className='text-3xl pt-10 font-bold md:text-4xl lg:text-5xl text-[#00005f]'>Designer & Front-end Developer</p>
+            <p className='text-gray-500 pt-5 pr-2'>I design and code amazing simple things, and i love it.</p>
+          </div>
+
+          <div className='flex md:pl-10 '>
             <Image
-              className=''
               src={BgMe}
-              alt="me"
+              className="rounded-xl md:rounded-xl"
+              alt='Hero'
             />
-            <div className='absolute top-[6%] left-[10%] mx-auto'>
-              <Image
-                className=''
-                src={Me}
-                layout='fixed'
-                width={400}
-                height={400}
-                alt="me"
-              />
-            </div>
+          </div>
+
         </div>
 
-        <div className='mt-8 ml-6'>
+        <div className='relative flex justify-center'>
+
           <Image
             className=''
             src={HeroSvg}
           />
+
         </div>
         
     </div>

@@ -5,10 +5,15 @@ import FooterTopBox from '../Footer/FooterTopBox'
 
 const RecentWork = () => {
   return (
-    <div className=' border-b-4 border-gray-300 shadow-xl mb-[40%] md:mb-[20%]'>
-        <p className='recentWorkTitle'>My Recent Work</p>
-        <p className='text-lg font-thin text-center pb-6'>{`Aqui Algunos de mis proyectos y diseños `}</p>
-        <div className='m-4 grid sm:grid-cols-2 lg:grid-cols-3 '>
+    <div className=''>
+      {/**Container Recent work */}
+      <div>
+        <div className='pt-10'>
+          <p className='bg-[#F8378C] rounded-xl text-center text-gray-200 text-2xl font-rocks p-4 max-w-[80%]  mx-auto md:max-w-[60%]'>My Recent Work</p>
+          <p className='text-gray-500 text-center py-10'>{`Aqui Algunos de mis proyectos y diseños `}</p>
+        </div>
+        {/**Grid Container*/}
+        <div className='w-[80%] md:grid md:grid-cols-3 gap-0 mx-auto  rounded-xl mb-20'>
           {projects.map((project) => (
             <WorkCard
               key={project.id}
@@ -18,6 +23,7 @@ const RecentWork = () => {
             />
           ))}
         </div>
+      </div>
     </div>
   )
 }

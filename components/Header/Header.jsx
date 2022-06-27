@@ -5,16 +5,18 @@ import  Link  from 'next/link'
 
 const Header = () => {
   return (
-    <div className='flex items-center justify-between px-4 md:px-12   pt-3'>
-      <Link href="/">
-        <p className='font-rocks text-4xl text-[#00005f]'>{`<t/>`}</p>
-      </Link>
-        
+    <div className='w-[80%] mx-auto'>
+      <div className='flex justify-between items-center pt-4'>
+        <Link href="/">
+          <p className='font-rocks text-[#00005f] text-3xl'>{`<t/>`}</p>
+        </Link>
         <Link
           href='/contact'
         >
-          <p className='buttonHeader'>{`Let's Meet`}</p>
+          <p className='font-bold shadow-sm text-xl hover:bg-[#F8378C] hover:text-white cursor-pointer p-2 rounded-lg text-[#F8378C]'>{`Let's Meet`}</p>
         </Link>
+      </div>
+      
         
     </div>
   )
