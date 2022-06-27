@@ -24,9 +24,10 @@ const FormContact = () => {
           .min(10, 'Must be at least 10 characters long')
           .required('El mensaje no puede estar vacio'),
       }),
-      onSubmit: (values) => {
+      onSubmit: (e , values) => {
+        
           emailjs.sendForm('service_9k0c7xh', 'template_vctotlz', values, 'pIBD5W5s47Rne__j5')
-          .then(() => console.log('Mensaje enviado con suceso'))
+          .then(() => setSubmitting(false), resetForm())
         }
       
     })
@@ -34,11 +35,11 @@ const FormContact = () => {
 
 
   return (
-    <div className='flex justify-center mt-4'>
+    <div className='w-[80%] mx-auto'>
       {suceso && <div className='bg-green-500 text-white font-bold p-2'>Email Enviado</div>}
       {error && <div className='bg-red-500 text-white font-bold p-2'>Error</div>}
 
-      <form >
+      <form className='w-[80%] md:w-[40%] mx-auto' onSubmit={formik.handleSubmit} >
         <div>
           <p className='formTitle'>Name</p>
           <input  
@@ -69,10 +70,10 @@ const FormContact = () => {
         </div>
         <div className='mt-4'>
           <p className='formTitle'>Message</p>
-          <textarea name="message"  className='resize-none shadow-xl border-2 rounded-xl mt-2 p-4 outline-none'  id="message" cols="30" rows="8"></textarea>
+          <textarea name="message"  className='resize-none shadow-xl border-2 rounded-xl mt-2 p-4 outline-none w-full'  id="message" ></textarea>
         </div> 
         <div className='flex justify-end my-4'> 
-          <button onSubmit={formik.handleSubmit} type="submit">Send</button>
+          <button type="submit">Send</button>
         </div>
         
       </form>
