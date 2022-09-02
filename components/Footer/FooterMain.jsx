@@ -7,7 +7,7 @@ import { SiTailwindcss } from 'react-icons/si'
 const FooterMain = () => {
   return (
     <div className='pt-4'>
-      <p className='text-center  font-rocks text-xl text-white pb-4'>ONCE YOU START THE CHANGE IS UNSTABABLE.</p>
+      <p className='text-center  font-rocks text-xl text-white pb-4'>ONCE YOU START THE CHANGE IS UNSTOPPABLE.</p>
       <div className='flex  space-x-2 justify-center'>
 
         <a href="https://api.whatsapp.com/send?phone=573175912109&text=%F0%9F%91%8B">
